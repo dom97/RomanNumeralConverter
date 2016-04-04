@@ -54,5 +54,22 @@ namespace RomanNumeralConverterTests
             Assert.AreEqual(11, RomanNumeralConverter.Convert("XI"));
         }
 
+        [TestMethod]
+        public void ConvertIX()
+        {
+            Assert.AreEqual(9, RomanNumeralConverter.Convert("IX"));
+        }
+
+        [TestMethod]
+        public void ConvertMMXII()
+        {
+            Assert.AreEqual(2012, RomanNumeralConverter.Convert("MMXII"));
+        }
+
+        [TestMethod]
+        public void ConvertMMIX()
+        {
+            Assert.AreEqual(2009, RomanNumeralConverter.Convert("MMIX"));
+        }
     }
 }
